@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Secret Club 💎</title>
 
-  <!-- FAVICONS (файлы лежат в корне → ../ ) -->
+  <!-- FAVICONS (лежат в корне) -->
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
@@ -66,7 +66,6 @@
     }
 
     .btn {
-      position: relative;
       display: inline-block;
       padding: 14px 32px;
       border-radius: 16px;
@@ -76,45 +75,14 @@
       text-decoration: none;
       background: linear-gradient(180deg, #2aabee, #229ed9);
       box-shadow: 0 12px 30px rgba(0, 139, 204, 0.4);
-      overflow: hidden;
       transition: .2s;
-      cursor: pointer;
     }
 
     .btn:hover {
       background: linear-gradient(180deg, #36b8f5, #2490c7);
       transform: translateY(-1px);
     }
-
-    .btn:active {
-      transform: translateY(1px);
-    }
-
-    .btn::after {
-      content: "";
-      position: absolute;
-      top: -50%;
-      left: -120%;
-      width: 80%;
-      height: 220%;
-      background: linear-gradient(
-        115deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.35) 45%,
-        rgba(255, 255, 255, 0) 90%
-      );
-      transform: skewX(-20deg);
-      animation: shine 3s infinite;
-    }
-
-    @keyframes shine {
-      0% { left: -120%; }
-      45% { left: 140%; }
-      100% { left: 140%; }
-    }
   </style>
-
-
 </head>
 
 <body>
